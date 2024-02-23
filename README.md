@@ -20,3 +20,11 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+## Answer
+
+We are iterating through the entire matrix, which we know has a memory complexity of $\Theta(|V|)$, and since it takes constant time to make changes to the adjacency list, we get a runtime complexity of $\Theta(|V|^2)$. It is evident that the runtime complexity depends on the number of vertices. And we can see that the number of edges doesn't change the runtime complexity since it takes constant time to handle the edges once they are discovered.
+
+## Bonus answer
+
+
