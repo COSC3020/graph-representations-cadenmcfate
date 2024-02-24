@@ -27,4 +27,6 @@ We are iterating through the entire matrix, which we know has a memory complexit
 
 ## Bonus answer
 
+The runtime complexity of the conversion from an adjacency list to an adacency matrix depends on the number of vertices AND the number of edges. We iterate through the adjacency list in the first for loop, which is $|V|$, and then we have another for loop of $|V|$ complexity to initialize the current column in the matrix to all zeros. Following this is another for loop that iterates through the sub-lists in the adjacency list. This for loop executes $|E|$ times altogether. Combining these terms we get $|V|^2 + |E|$, so our runtime complexity is $\Theta(|V|^2 + |E|)$. The $|E|$ term does not get ignored.
+
 
